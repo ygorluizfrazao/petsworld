@@ -5,141 +5,220 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
 
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
     />
 
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    ></script>
 
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
 
-        @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+      :root {
+        --color-primary: #0f9adb;
+        --color-over-primary: white;
 
-        
-        :root {
-            --color-primary: #0f9adb;
-            --color-over-primary: white;
+        --color-primary-dark: #064562;
+        --color-over-primary-dark: white;
+        --icon-small: 16px;
+        --icon-medium: 32px;
+        --icon-large: 48px;
+      }
 
-            --color-primary-dark: #064562;
-            --color-over-primary-dark: white;
-            --icon-small: 16px;
-            --icon-medium: 32px;
-            --icon-large: 48px;
-        }
+      body {
+        display: flex;
+        background-color: azure;
+        font-family: "Alata", sans-serif;
+      }
 
-        body {
-            background-color: azure;
-            font-family: 'Alata', sans-serif;
-        }
+      .logo {
+        border-radius: 50%;
+        max-width: var(--icon-large);
+        border: 2px solid var(--color-over-primary-dark);
+      }
 
-        .logo {
-            border-radius: 50%;
-            max-width: var(--icon-large);
-            border: 2px solid var(--color-over-primary-dark);
-        }
+      .menu-sidebar {
+        background-color: var(--color-primary-dark);
+        max-width: 250px;
+        width: fit-content;
+      }
 
-        .menu-sidebar {
-            background-color: var(--color-primary-dark);
-            max-width: 250px;
-            width: fit-content;
-        }
+      .menu-sidebar li {
+        max-width: 100%;
+      }
 
-        .menu-sidebar li {
-            max-width: 100%;
-        }
+      .menu-sidebar li a .menu-text {
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
 
-        .menu-sidebar li a .menu-text{
-            display: inline-block;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
+      .menu-sidebar span,
+      hr {
+        color: var(--color-over-primary-dark);
+      }
 
-        .menu-sidebar span, hr {
-            color: var(--color-over-primary-dark);
-        }
+      .menu-icon {
+        max-width: var(--icon-medium);
+      }
 
-        .menu-icon {
-            max-width: var(--icon-medium);
-        }
+      .nav-link {
+        color: var(--color-over-primary-dark);
+      }
 
-        .nav-link {
-            color: var(--color-over-primary-dark);
-        }
+      .carousel-item img {
+        height: 60vh;
+        object-fit: cover;
+      }
     </style>
 
     <title>Pets World</title>
   </head>
 
-
   <body>
-    <!-- <header class="navbar navbar-expand-lg sticky-top">
-      <div class="container">
-        <h1 class="navbar-brand">Pets World</h1>
-      </div>
-    </header>
-    <div class="d-flex align-items-start bg-dark mw-25 vw-25 sticky-left sticky-top ps-5 pe-5">
-        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Sobre Nós</button>
-            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profissional</button>
-            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" disabled>Produtos</button>
-            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Contatos</button>
+    <div
+      class="menu-sidebar d-flex flex-column flex-shrink-0 flex-grow-1 vh-100 p-3 sticky-top"
+    >
+      <a
+        href="/"
+        class="d-flex w-100 align-items-center gap-3 mb-3 mb-md-0 me-md-auto text-decoration-none"
+      >
+        <img
+          class="logo"
+          style="border-radius: 50%"
+          src="assets/images/logo2.png"
+          alt="Logo"
+        />
+        <span class="d-block fs-4">Pet's World</span>
+      </a>
+      <hr />
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <a
+            href="#"
+            class="nav-link active d-flex gap-2 align-items-center"
+            aria-current="page"
+          >
+            <span class="material-symbols-outlined"> home </span>
+            <span class="menu-text"> Sobre Nós </span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="#"
+            class="nav-link d-flex gap-2 align-items-center"
+            aria-current="page"
+          >
+            <span class="material-symbols-outlined"> verified </span>
+            <span class="menu-text"> Profissional </span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="#"
+            class="nav-link d-flex gap-2 align-items-center"
+            aria-current="page"
+          >
+            <span class="material-symbols-outlined"> shopping_bag </span>
+            <span class="menu-text"> Produtos </span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="#"
+            class="nav-link d-flex gap-2 align-items-center"
+            aria-current="page"
+          >
+            <span class="material-symbols-outlined"> import_contacts </span>
+            <span class="menu-text"> Contatos </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="d-flex flex-column w-100">
+      <section class="about w-100 vh-60">
+        <div id="carousel" class="carousel slide vh-50" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img
+                src="assets/images/about/about-1.png"
+                class="d-block w-100"
+                alt="Campo de flores"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="assets/images/about/about-2.jpg"
+                class="d-block w-100"
+                alt="A dark feathered duck"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="assets/images/about/about-3.jpg"
+                class="d-block w-100"
+                alt="A beautiful hommingbird"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-    </div> -->
-
-    <div class="menu-sidebar d-flex flex-column flex-shrink-0 p-3 vh-100 sticky-top">
-        <a href="/" class="d-flex w-100 align-items-center gap-3 mb-3 mb-md-0 me-md-auto text-decoration-none">
-          <img class="logo" style="border-radius: 50%;" src="assets/images/logo2.png" alt="Logo">
-          <span class="d-block fs-4">Pets World</span>
-        </a>
-        <hr>
-        <ul class="nav nav-pills flex-column mb-auto">
-          <li class="nav-item">
-            <a href="#" class="nav-link active d-flex gap-2 align-items-center" aria-current="page">
-                <span class="material-symbols-outlined">
-                    home
-                </span>
-                <span class="menu-text">
-                    Sobre Nós
-                </span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link d-flex gap-2 align-items-center" aria-current="page">
-                <span class="material-symbols-outlined">
-                    verified
-                </span>
-                <span class="menu-text">
-                    Profissional
-                </span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link d-flex gap-2 align-items-center" aria-current="page">
-                <span class="material-symbols-outlined">
-                    shopping_bag
-                </span>
-                <span class="menu-text">
-                    Produtos
-                </span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link d-flex gap-2 align-items-center" aria-current="page">
-                <span class="material-symbols-outlined">
-                    import_contacts
-                </span>
-                <span class="menu-text">
-                    Contatos
-                </span>
-            </a>
-          </li>
-        </ul>
-      </div>
+        <div class="container-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 color-primary">
+                        <h2 class="text-center">Some text</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati a consequuntur laborum non deleniti. Deleniti repellendus delectus qui, est necessitatibus expedita rem. Necessitatibus debitis nemo aut recusandae saepe deserunt fugit veritatis quia soluta voluptates dicta at nulla a perspiciatis eveniet amet quam deleniti laboriosam, aliquid exercitationem ipsa, quod incidunt. Reprehenderit facilis quas ducimus tenetur modi adipisci natus iste asperiores necessitatibus assumenda neque exercitationem dignissimos porro iure ratione ad incidunt nesciunt odio, vitae labore esse praesentium sit corrupti quisquam! Eos aut perferendis quae, accusantium, itaque libero molestias a suscipit quasi non delectus commodi error sed nulla explicabo culpa deleniti unde minus ipsum. Totam tenetur rerum cum dolor quaerat ad a delectus aspernatur quasi atque dicta, eligendi quam itaque labore repellendus porro asperiores quia aut odit animi? Asperiores, facere numquam! Veniam facilis porro odit illum tenetur perspiciatis, nulla numquam ea cumque odio quibusdam. Illum dolore in itaque recusandae dolores, iusto repellendus laborum magnam. Ipsam architecto sequi nihil sunt magni dolore atque optio laborum sapiente nobis. Ut, excepturi iusto dolores at hic provident libero quidem! Labore necessitatibus culpa iste accusantium neque repellat, voluptates natus sequi explicabo beatae quia laboriosam deserunt optio pariatur totam dolor obcaecati! Ab accusamus nihil sit vitae odit, vero fuga earum odio illo suscipit excepturi assumenda enim, temporibus fugit pariatur. Sit nisi eos eveniet? Repudiandae quod culpa saepe autem asperiores quidem harum nemo voluptatem cupiditate, doloribus voluptas facilis porro sapiente facere eaque voluptatibus atque nesciunt ipsam? Eligendi placeat, fuga sapiente dolorem perspiciatis hic sint officia optio consequatur illo quos, dolores nihil accusamus quibusdam fugit quaerat eum, quis molestias accusantium. Odio alias nam facilis qui enim vero dolorum fuga sint veritatis distinctio quibusdam perferendis consequatur repudiandae molestias voluptatibus expedita velit facere, cupiditate necessitatibus dignissimos voluptatum obcaecati accusamus? Ut libero cupiditate beatae assumenda iste repellendus, vitae iusto expedita quos totam error consequuntur doloribus molestias cum magnam molestiae inventore blanditiis veniam dolore aperiam itaque voluptatibus ipsam similique maxime? Quaerat repellat quis vitae ad quibusdam blanditiis mollitia eos exercitationem cumque magni. Placeat ipsam quo ducimus sunt optio corporis architecto minus atque, suscipit quisquam deserunt illo molestias dicta! Ex, architecto ut quidem consequuntur eius neque beatae sit minus maiores! Nostrum iure consectetur voluptates sunt illo, nemo, doloremque iusto sapiente, odit vel ab earum quidem sed tempora ducimus vero. Minus provident inventore temporibus, maxime sunt itaque iste repellendus nesciunt accusantium tenetur aliquam eum cupiditate? Ipsam blanditiis dignissimos perferendis quas veniam nihil. Pariatur at quia veritatis atque vel aliquam perferendis adipisci, laborum repellat voluptas itaque possimus quod. Tempora ipsum rem maxime, omnis libero ut dignissimos deleniti pariatur quae voluptate eius inventore molestiae blanditiis. Obcaecati nihil modi, et, asperiores quo esse excepturi maxime dolore rerum aspernatur voluptate iste mollitia architecto? Deserunt, animi et? Suscipit, placeat repellendus eum animi consectetur, dignissimos eos quaerat voluptatem corrupti ea dolore veniam tempora nemo dolores beatae expedita officia ullam magni maiores aperiam reprehenderit at reiciendis. Totam itaque ipsum aliquid enim nemo recusandae cupiditate optio veniam animi neque, voluptatum possimus laborum nulla, ab quis ut alias dolore omnis maiores doloribus iusto cumque? Perferendis, repellendus!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+    </div>
   </body>
-
-
 </html>

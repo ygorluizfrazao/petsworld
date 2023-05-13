@@ -5,8 +5,6 @@ reveals.forEach((reveal) => {
       if (entry.isIntersecting) {
         if (!reveal.classList.contains("slide-in"))
           reveal.classList.add("slide-in");
-
-          console.log(reveal)
         return;
       }
       if (reveal.classList.contains("slide-in"))

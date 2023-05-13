@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Roboto&display=swap");
+
+:root {
+  --color-primary: #528ca7;
+  --color-over-primary: white;
+
+  --color-primary-dark: #064562;
+  --color-over-primary-dark: white;
+
+  --color-secondary: #c2e4f4;
+  --color-over-secondary: rgb(0, 0, 0);
+
+  --icon-small: 16px;
+  --icon-medium: 32px;
+  --icon-large: 48px;
+  --icon-button: 64px;
+}
+
+@keyframes slide-right {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in {
+  animation: 700ms slide-right 0ms forwards;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateX(-80%);
+}
+
+body {
+  position: relative;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Alata", sans-serif;
+}
+
+.logo {
+  border-radius: 50%;
+  max-width: var(--icon-large);
+  border: 2px solid var(--color-over-primary-dark);
+}
+
+.menu-sidebar {
+  background-color: var(--color-primary-dark);
+  max-width: 250px;
+  width: fit-content;
+}
+
+.menu-sidebar li {
+  max-width: 100%;
+}
+
+.menu-sidebar li a .menu-text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu-sidebar span,
+hr {
+  color: var(--color-over-primary-dark);
+}
+
+.menu-icon {
+  max-width: var(--icon-medium);
+}
+
+.nav-link {
+  color: var(--color-over-primary-dark);
+}
+
+.carousel-item img {
+  height: 60vh;
+  object-fit: cover;
+}
+
+.about {
+  background-color: var(--color-primary);
+  color: var(--color-over-primary);
+}
+
+.about hr {
+  color: var(--color-over-primary);
+}
+
+.professional {
+  background-color: var(--color-secondary);
+  color: var(--color-over-secondary);
+}
+
+.professional hr {
+  color: var(--color-over-secondary);
+}
+
+.floating-controls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  font-size: var(--icon-medium);
+}
+
+.floating-controls a {
+  text-decoration: none;
+  border-radius: 50%;
+  outline: none;
+  border: 1px solid var(--color-over-primary-dark);
+  background-color: var(--color-primary-dark);
+  color: var(--color-over-primary);
+  box-shadow: 0 0 4px var(--color-over-primary-dark);
+  width: var(--icon-button);
+  height: var(--icon-button);
+}
+
+.floating-controls a:hover {
+  transition: all 300ms;
+  box-shadow: 0 0 20px var(--color-over-primary-dark);
+}

@@ -27,12 +27,6 @@
   animation: 700ms slide-right 0ms forwards;
 }
 
-
-html {
-  scroll-snap-type: both mandatory;
-  scroll-padding: 11%;
-}
-
 .reveal {
     opacity: 0;
     transform: translateX(-80%);
@@ -144,6 +138,7 @@ hr,h1 {
   }
 
   html {
+    scroll-snap-type: y mandatory;
     scroll-padding: 1%;
   }
 }

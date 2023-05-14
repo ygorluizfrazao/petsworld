@@ -5,10 +5,11 @@ reveals.forEach((reveal) => {
       if (entry.isIntersecting) {
         if (!reveal.classList.contains("slide-in"))
           reveal.classList.add("slide-in");
-        return;
+      } else {
+        if (reveal.classList.contains("slide-in"))
+          reveal.classList.remove("slide-in");
       }
-      if (reveal.classList.contains("slide-in"))
-        reveal.classList.remove("slide-in");
+      refreshDataSpy();
     },
     {
       root: null,
@@ -17,3 +18,12 @@ reveals.forEach((reveal) => {
   );
   observer.observe(reveal);
 });
+
+function refreshDataSpy() {
+  var dataSpyList = [].slice.call(
+    document.querySelectorAll('[data-bs-spy="scroll"]')
+  );
+  dataSpyList.forEach(function (dataSpyEl) {
+    bootstrap.ScrollSpy.getInstance(dataSpyEl).refresh();
+  });
+}

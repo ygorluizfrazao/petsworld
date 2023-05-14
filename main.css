@@ -27,9 +27,15 @@
   animation: 700ms slide-right 0ms forwards;
 }
 
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-padding: 11%;
+}
+
 .reveal {
     opacity: 0;
-    transform: translateX(-80%);
+    /* transform: translateX(-10%); */
 }
 
 body {
@@ -44,6 +50,21 @@ h5,
 h6 {
   font-family: "Alata", sans-serif;
   font-weight: bold;
+}
+
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+}
+
+section:nth-of-type(even) {
+  background-color: var(--color-secondary);
+  color: var(--color-over-secondary);
+}
+
+section:nth-of-type(odd) {
+  background-color: var(--color-primary);
+  color: var(--color-over-primary);
 }
 
 .logo {
@@ -90,24 +111,6 @@ hr,h1 {
   object-fit: cover;
 }
 
-.about {
-  background-color: var(--color-primary);
-  color: var(--color-over-primary);
-}
-
-.about hr {
-  color: var(--color-over-primary);
-}
-
-.professional {
-  background-color: var(--color-secondary);
-  color: var(--color-over-secondary);
-}
-
-.professional hr {
-  color: var(--color-over-secondary);
-}
-
 .floating-controls {
   position: fixed;
   bottom: 0;
@@ -136,5 +139,9 @@ hr,h1 {
 @media screen and (min-width: 768px) {
   .menu-sidebar {
     height: 100vh;
+  }
+
+  html {
+    scroll-padding: 0;
   }
 }

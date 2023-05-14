@@ -35,7 +35,7 @@ html {
 
 .reveal {
     opacity: 0;
-    /* transform: translateX(-10%); */
+    transform: translateX(-80%);
 }
 
 body {
@@ -54,7 +54,7 @@ h6 {
 
 section {
   scroll-snap-align: start;
-  scroll-snap-stop: normal;
+  scroll-snap-stop: always;
 }
 
 section:nth-of-type(even) {

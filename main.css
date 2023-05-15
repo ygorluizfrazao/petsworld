@@ -33,9 +33,7 @@
 }
 
 body {
-  position: relative;
   font-family: "Roboto", sans-serif;
-  overflow-y: scroll;
 }
 
 h1,
@@ -46,11 +44,6 @@ h5,
 h6 {
   font-family: "Alata", sans-serif;
   font-weight: bold;
-}
-
-section {
-  scroll-snap-align: start;
-  scroll-snap-stop: normal;
 }
 
 section:nth-of-type(even) {
@@ -140,5 +133,10 @@ hr,h1 {
   html {
     scroll-snap-type: y mandatory;
     scroll-padding: 1%;
+  }
+
+  section {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
   }
 }

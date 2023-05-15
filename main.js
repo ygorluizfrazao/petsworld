@@ -9,7 +9,6 @@ reveals.forEach((reveal) => {
         if (reveal.classList.contains("slide-in"))
           reveal.classList.remove("slide-in");
       }
-      refreshDataSpy();
     },
     {
       root: null,
@@ -18,12 +17,3 @@ reveals.forEach((reveal) => {
   );
   observer.observe(reveal);
 });
-
-function refreshDataSpy() {
-  var dataSpyList = [].slice.call(
-    document.querySelectorAll('[data-bs-spy="scroll"]')
-  );
-  dataSpyList.forEach(function (dataSpyEl) {
-    bootstrap.ScrollSpy.getInstance(dataSpyEl).refresh();
-  });
-}

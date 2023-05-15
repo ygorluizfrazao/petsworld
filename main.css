@@ -46,15 +46,17 @@ h6 {
   font-weight: bold;
 }
 
-section:nth-of-type(even) {
+section:nth-of-type(even), section:nth-of-type(even) hr {
   background-color: var(--color-secondary);
   color: var(--color-over-secondary);
 }
 
-section:nth-of-type(odd) {
+section:nth-of-type(odd), section:nth-of-type(odd) hr {
   background-color: var(--color-primary);
   color: var(--color-over-primary);
 }
+
+
 
 .logo {
   border-radius: 50%;

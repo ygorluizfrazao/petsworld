@@ -89,6 +89,19 @@ hr,h1 {
   color: var(--color-over-primary-dark);
 }
 
+.products-sidebar li a .menu-text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.products-sidebar span,
+hr,h1 {
+  color: var(--color-over-primary-dark);
+}
+
+
 .menu-icon {
   max-width: var(--icon-medium);
 }
@@ -127,18 +140,28 @@ hr,h1 {
   box-shadow: 0 0 20px var(--color-over-primary-dark);
 }
 
+.card {
+  max-height: 300px;
+  overflow-y: hidden;
+}
+
+.card img {
+  height: 50%;
+  object-fit: cover;
+}
+
 @media screen and (min-width: 768px) {
   .menu-sidebar {
     height: 100vh;
   }
 
-  html {
+  /* html {
     scroll-snap-type: y mandatory;
-    scroll-padding: 1%;
+    scroll-padding: 3%;
   }
 
   section {
     scroll-snap-align: start;
     scroll-snap-stop: normal;
-  }
+  } */
 }

@@ -94,7 +94,7 @@
             </li>
             <li class="nav-item w-md-100">
               <a
-                href="#"
+                href="#products"
                 class="nav-link d-flex gap-2 align-items-center"
                 aria-current="page"
               >
@@ -104,7 +104,7 @@
             </li>
             <li class="nav-item w-md-100">
               <a
-                href="#"
+                href="#contacts"
                 class="nav-link d-flex gap-2 align-items-center"
                 aria-current="page"
               >
@@ -224,7 +224,7 @@
         </div>
       </section>
       <section id="professional" class="w-100 min-vh-100">
-        <div class="container">
+        <div class="container pb-3">
           <div class="row mt-2">
             <div class="col-12">
               <h2 class="reveal">Profissional</h2>
@@ -326,108 +326,183 @@
           </div>
         </div>
       </section>
-      <section id="products">
-        <div class="container">
+      <section id="products" class="w-100 min-vh-100">
+        <div class="container pb-3">
           <div class="row mt-2">
             <div class="col-12">
-              <h2 class="reveal">Profissional</h2>
+              <h2 class="reveal">Produtos e Serviços</h2>
               <hr />
-            </div>
-          </div>
-          <div class="row align-items-start mt-2">
-            <div class="col-lg-4 col-12">
-              <img
-                class="professional-pic w-100 h-100 reveal"
-                src="assets/images/professional/veterinary.jpg"
-                alt="Veterinário"
-              />
-            </div>
-            <div class="col-lg-8 mt-lg-0 col-12 mt-3">
-              <article class="reveal">
-                <h3>Wellington Frazão Campos</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Voluptate, explicabo pariatur placeat facilis impedit nostrum.
-                  Nam pariatur dolor, dolorem eligendi magnam voluptates
-                  blanditiis laboriosam similique, adipisci quis molestiae
-                  officia veniam maiores. Quidem sapiente laboriosam aspernatur
-                  assumenda similique error ipsa placeat distinctio dicta optio?
-                  Expedita necessitatibus tempore est voluptatem eius
-                  praesentium sapiente deleniti veniam quis, numquam culpa rerum
-                  dicta architecto ad aperiam repudiandae nobis maxime
-                  blanditiis, illum quaerat
-                </p>
-                <caption>
-                  CRV - 00000
-                </caption>
-              </article>
             </div>
           </div>
           <div class="row mt-3">
-            <div class="col-12">
-              <h3 class="reveal">Certificações</h3>
-              <hr />
-            </div>
-          </div>
-          <div class="row mt-2 gy-4">
-            <div class="col-lg-4 col-md-6 col-12">
-              <article>
-                <img
-                  class="rounded w-100 reveal"
-                  src="assets/images/professional/certificate-1.png"
-                  alt="Certificado 1"
-                />
-              </article>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <article>
-                <img
-                  class="rounded w-100 reveal"
-                  src="assets/images/professional/certificate-2.png"
-                  alt="Certificado 2"
-                />
-              </article>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <article>
-                <img
-                  class="rounded w-100 reveal"
-                  src="assets/images/professional/certificate-3.png"
-                  alt="Certificado 3"
-                />
-              </article>
-            </div>
-          </div>
-          <div class="row mt-2 gy-4">
-            <div class="col-lg-4 col-md-6 col-12">
-              <article>
-                <img
-                  class="rounded w-100 reveal"
-                  src="assets/images/professional/certificate-1.png"
-                  alt="Certificado 1"
-                />
-              </article>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <article>
-                <img
-                  class="rounded w-100 reveal"
-                  src="assets/images/professional/certificate-2.png"
-                  alt="Certificado 2"
-                />
-              </article>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <article>
-                <img
-                  class="rounded w-100 reveal"
-                  src="assets/images/professional/certificate-3.png"
-                  alt="Certificado 3"
-                />
-              </article>
+            <aside class="col-lg-2 products-sidebar reveal">
+              <ul class="nav nav-pills nav-fill d-flex flex-lg-column flex-row mb-3 mb-lg-0 reveal">
+                <li class="nav-item text-start">
+                  <a data-bs-toggle="tab" data-bs-target="#tab-services" class="nav-link active d-flex" aria-current="page" href="#">
+                    <span class="menu-text fw-bold reveal"> Serviços </span>
+                  </a>
+                </li>
+                <li class="nav-item text-start">
+                  <a data-bs-toggle="tab" data-bs-target="#tab-pharmacy" class="nav-link d-flex" aria-crrent="page" href="#">
+                    <span class="menu-text fw-bold reveal"> Farmácia </span>
+                  </a>
+                </li>
+                <li class="nav-item text-start">
+                  <a data-bs-toggle="tab" data-bs-target="#tab-feeding" class="nav-link d-flex" aria-crrent="page" href="#">
+                    <span class="menu-text fw-bold reveal"> Alimentação </span>
+                  </a>
+                </li>
+                <li class="nav-item text-start">
+                  <a data-bs-toggle="tab" data-bs-target="#tab-accessories" class="nav-link d-flex" aria-crrent="page" href="#">
+                    <span class="menu-text fw-bold reveal"> Acessórios </span>
+                  </a>
+                </li>
+              </ul>
+            </aside>
+            <div class="col-md-10 reveal">
+              <div class="tab-content">
+                <div class="tab-pane active px-3" id="tab-services">
+                  <div class="row gap-3">
+                    <div class="col-md-5 col-lg-3 card p-0 reveal">
+                      <img class="d-block w-100 card-img-top" src="assets/images/products/services/services-1.webp" alt="Cirurgia animal">
+                      <div class="card-body">
+                        <h6 class="card-title">Cirurgias</h6>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, recusandae!</p>
+                      </div>
+                    </div>
+                    <div class="col-md-5 col-lg-3 card p-0 reveal">
+                      <img class="d-block w-100 card-img-top" src="assets/images/products/services/services-2.jpg" alt="Consultas">
+                      <div class="card-body">
+                        <h6 class="card-title">Consultas</h6>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, recusandae!</p>
+                      </div>
+                    </div>
+                    <div class="col-md-5 col-lg-3 card p-0 reveal">
+                      <img class="d-block w-100 card-img-top" src="assets/images/products/services/services-3.jpg" alt="Internações">
+                      <div class="card-body">
+                        <h6 class="card-title">Internações</h6>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, recusandae!</p>
+                      </div>
+                    </div>
+                    <div class="col-md-5 col-lg-3 card p-0 reveal">
+                      <img class="d-block w-100 card-img-top" src="assets/images/products/services/services-4.jpg" alt="Vacinas">
+                      <div class="card-body">
+                        <h6 class="card-title">Vacinas</h6>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, recusandae!</p>
+                      </div>
+                    </div>
+                    <div class="col-md-5 col-lg-3 card p-0 reveal">
+                      <img class="d-block w-100 card-img-top" src="assets/images/products/services/services-5.jpg" alt="Banho e Tosa">
+                      <div class="card-body">
+                        <h6 class="card-title">Banho e Tosa</h6>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, recusandae!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane px-3" id="tab-pharmacy">
+                  <div class="row gap-3">
+                    <div class="col-md-5 col-lg-3 card p-0 reveal">
+                      <img class="d-block w-100 card-img-top" src="assets/images/products/pharmacy/pharmacy-1.jpg" alt="Antibióticos">
+                      <div class="card-body">
+                        <h6 class="card-title">Antibióticos</h6>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, recusandae!</p>
+                      </div>
+                    </div>
+                    <div class="col-md-5 col-lg-3 card p-0 reveal">
+                      <img class="d-block w-100 card-img-top" src="assets/images/products/pharmacy/pharmacy-2.jpg" alt="Antiparasitários">
+                      <div class="card-body">
+                        <h6 class="card-title">Antiparasitários</h6>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, recusandae!</p>
+                      </div>
+                    </div>
+                    <div class="col-md-5 col-lg-3 card p-0 reveal">
+                      <img class="d-block w-100 card-img-top" src="assets/images/products/pharmacy/pharmacy-3.webp" alt="Vermífugos">
+                      <div class="card-body">
+                        <h6 class="card-title">Vermífugos</h6>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, recusandae!</p>
+                      </div>
+                    </div>
+                    <div class="col-md-5 col-lg-3 card p-0 reveal">
+                      <img class="d-block w-100 card-img-top" src="assets/images/products/pharmacy/pharmacy-4.webp" alt="Shampoos">
+                      <div class="card-body">
+                        <h6 class="card-title">Shampoos</h6>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, recusandae!</p>
+                      </div>
+                    </div>
+                    <div class="col-md-5 col-lg-3 card p-0 reveal">
+                      <img class="d-block w-100 card-img-top" src="assets/images/products/pharmacy/pharmacy-5.jpg" alt="Perfumaria">
+                      <div class="card-body">
+                        <h6 class="card-title">Perfumaria</h6>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, recusandae!</p>
+                      </div>
+                    </div>
+                    <div class="col-md-5 col-lg-3 card p-0 reveal">
+                      <img class="d-block w-100 card-img-top" src="assets/images/products/pharmacy/pharmacy-6.webp" alt="Sabonetes">
+                      <div class="card-body">
+                        <h6 class="card-title">Sabonetes</h6>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, recusandae!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane px-3" id="tab-feeding">
+                  <div class="row gap-3">
+                    <div class="col-md-5 col-lg-3 card p-0 reveal">
+                      <img class="d-block w-100 card-img-top" src="assets/images/products/feeding/feeding-1.webp" alt="Ração especial">
+                      <div class="card-body">
+                        <h6 class="card-title">Ração especial</h6>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, recusandae!</p>
+                      </div>
+                    </div>
+                    <div class="col-md-5 col-lg-3 card p-0 reveal">
+                      <img class="d-block w-100 card-img-top" src="assets/images/products/feeding/feeding-2.webp" alt="Rações premium">
+                      <div class="card-body">
+                        <h6 class="card-title">Rações premium</h6>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, recusandae!</p>
+                      </div>
+                    </div>
+                    <div class="col-md-5 col-lg-3 card p-0 reveal">
+                      <img class="d-block w-100 card-img-top" src="assets/images/products/feeding/feeding-3.webp" alt="Patês">
+                      <div class="card-body">
+                        <h6 class="card-title">Patês</h6>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, recusandae!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane px-3" id="tab-accessories">
+                  <div class="row gap-3">
+                    <div class="col-md-5 col-lg-3 card p-0 reveal">
+                      <img class="d-block w-100 card-img-top" src="assets/images/products/accessories/accessories-1.jpg" alt="Fantasias">
+                      <div class="card-body">
+                        <h6 class="card-title">Fantasias</h6>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, recusandae!</p>
+                      </div>
+                    </div>
+                    <div class="col-md-5 col-lg-3 card p-0 reveal">
+                      <img class="d-block w-100 card-img-top" src="assets/images/products/accessories/accessories-2.jpg" alt="Vestidos">
+                      <div class="card-body">
+                        <h6 class="card-title">Vestidos</h6>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, recusandae!</p>
+                      </div>
+                    </div>
+                    <div class="col-md-5 col-lg-3 card p-0 reveal">
+                      <img class="d-block w-100 card-img-top" src="assets/images/products/accessories/accessories-3.webp" alt="Roupas casuais">
+                      <div class="card-body">
+                        <h6 class="card-title">Roupas casuais</h6>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, recusandae!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+      <section id="contacts" class="w-100 min-vh-100">
+
       </section>
     </div>
   </body>
